@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS lesson</title>
+    <style>
+    	li .redLink{
+    		color: red;
+    	}
+    	.article > p{
+    		color: red;
+    	}
+    </style>
+</head>
+<body>
+	<div class="article">
+	<p>newspaper</p>
+	<div class="content">
+	<p>Tect</p>
+</div>
+</div>
+	<ul>
+		<li>SamSung: <a class="redLink">Galaxy S7 Edge</a></li>
+		<li>LG: <a class="redLink">LG G5</a></li>
+		<li>MIcrosoft: <a>Lumia 650</a></li>
+	</ul>
+</body>
+
+<style>
+	a:link {color: blue; text-decoration: none}
+	a:visited {color: pink; text-decoration: none}
+	a:hover {color: red; text-decoration: underline}
+	a:active {color: yellow; text-decoration: underline}
+	input:hover {border:2px, solid red;}
+	:lang(ru) {color: green;}
+</style>
+<body>
+	<a href="index.html" target="_blank">Books about CSS</a><br>
+	<input type="text" />
+	<p lang="ru-RU">I study CSS</p>
+</body>
+
+<!-- <style>
+	a:not(.blueLink) { color: red; } 
+</style>
+<body>
+	<a>first</a><br>
+	<a class="blueLink">secondlink</a><br>
+	<a>thirdlink</a>
+</body> -->
+
+<style>
+	tr:nth-child(odd) {background-color: #bbb;}
+	tr:nth-child(even){background-color: #fff;}
+	/*tr:nth-child(3){background-color: #fff;}*/
+	/*tr:nth-child(2n+1){background-color: #bbb;}
+	tr:nth-child(3n+2){background-color: #fff;}*/
+</style>
+<body>
+	<h3>Smartphone</h3>
+	<table>
+		<tr><td>SamSung</td><td>Galaxy S7 Edge</td><td>60000</td></tr>
+		<tr><td>Apple</td><td>iPhone SE</td><td>39000</td></tr>
+		<tr><td>Microsoft</td><td>Lumia 650</td><td>13500</td></tr>
+	</table>
+</body>
+
+<style>
+	:enabled{
+		border: 2px black solid;
+		color: red;
+	}
+</style>
+<body>
+	<p><input type="text" value="Enabled" /></p>
+	<p><input type="text" disabled value="Disabled" /></p>
+</body>
+
+<style>
+	::first-letter {color:red; font-size: 25px;}
+	::first-line {font-size: 20px;}
+</style>
+<body>
+	<p>He not seen at all. Behind him nothing, except sky.</p>
+</body>
+
+<style>
+	.warning::before{ content: "Important! ";font-weight: bold; }
+	.warning::after{content: " Becareful!";font-weight: bold;}
+	::selection{
+		color: green;
+		background-color: red;
+	}
+</style>
+<body>
+	<p><span class="warning" >Do not try to put your tongue into an electrical outlet.</span></p>
+</body>
+
+<style>
+	input[type="text"]{
+		border: 2px solid red;
+	}
+	.link[href="http://apple.com"]{
+		color:red;
+	}
+	a[href^="http://"]{
+		color: red;
+	}
+	img[src$=".jpg"]{
+		width: 100px;
+	}
+	a[href^="microsoft"]{
+		color: red;
+	}
+</style>
+<body>
+	<p><input type="text" id="login" /></p>
+	<p><input type="password" id="password" /></p>
+	<input type="submit" value="Send" />
+</body>
+
+<style>
+	div{
+		background-color: red;
+		opacity: 0.5;
+		background-position top right;
+	}
+	@font-face{
+		font-family: 'Roboto';
+		src: url(http://fonts.gstatic.com/s/roboto/v15/mErvLBYg_cx63rLvUsKT_fesZW2xOQ-xsNqO47m55DA,woff2);
+	}
+	p{
+		font-family: Roboto;
+	}
+</style>
+<body>
+	<p>Test</p>
+</body>
+
+<style>
+	div{
+		margin: 5px;
+		padding: 14px;
+		border: 3px dashed black;
+	}
+</style>
+
+<!-- <style>
+	div{
+		margin: 10px;
+		border: 1px solid black;
+		font-size: 20px;
+		height: 80px;
+	}
+	#header{
+		background-color: #ccc;
+	}
+	#sidebar{
+		background-color: #ddd;
+	}
+	#main{
+		background-color: #eee;
+		height: 200px;
+	}
+	#footer{
+		background-color: #ccc;
+	}
+</style> -->
+<body>
+	<div id="header">A cap</div>
+	<div id="sidebar">Citebot</div>
+	<div id="main">Maincontent</div>
+	<div id="footer">phooter</div>
+</body>
+
+<!-- <style>
+	#sidebar{
+		background-color: #ddd;
+		float: left;
+		width: 125px;
+	}
+	#main{
+		background-color: #eee;
+		height: 200px;
+		margin-left: 170px;
+	}
+</style> -->
+
+<style>
+	div{
+		margin: 10px;
+		border: 1px solid black;
+		font-size: 20px;
+		height: 80px;
+	}
+	#header{background-color: #ccc;}
+	#sidebar{
+		background-color: #bbb;
+		float: right;
+		width: 150px;
+	}
+	#main{
+		background-color: #fafafa;
+		height: 200px;
+		margin-right: 170px;
+	}
+	#menu{float: left;background-color: #ddd;}
+	#warrper{background-color: #ddd;}
+	#content{background-color: #eee;}
+	#footer{background-color: #ccc;}
+</style>
+<body>
+	<div id="header">A Cap</div>
+	<div id="sidebar">Right</div>
+	<div id="main">
+		<div id="menu">Menu</div>
+		<div id="content">Maincontent</div>
+	</div>
+	<div id="footer">Phooter</div>
+</body>
+
+<body>
+	<br>
+	<div id="header"><h2>Web.com</h2></div>
+	<div id="warrper">
+		<ul>
+			<li><a href="#">Main</a></li>
+			<li><a href="#">Block</a></li>
+			<li><a href="#">Facebook</a></li>
+			<li><a href="#">0 Web</a></li>
+		</ul>
+	</div>
+	<div id="main">
+		<h2>What is Loren Ipsun?</h2>
+		<p>Loren Ipsun is simply dummy text of the printing and typesetting industry. Loren Ipsun has been the industry...</p>
+	</div>
+	<div id="footer">
+		<p>Copyright e Mysyte.com, 2016</p>
+	</div>
+</body>
+
+<style>
+	span{
+		width: 100px;
+		height: 30px;
+		background-color: #aaa;
+	}
+	.inine8lockSpan{
+		display: inline-block;
+	}
+</style>
+<body>
+	<p>Go to the <span>school</span>, he stopped.</p>
+	<p>Go to the <span class="inine8lockSpan">city, he stopped.</span></p>
+</body>
+
+<style>
+	ul{
+		display: table;
+		margin: 0;
+	}
+	li{
+		list-style-type: none;
+		display: table-cell;
+		padding: 10px;
+	}
+</style>
+<body>
+	<ul>
+		<li>Item 1</li>
+		<li>Item 2</li>
+		<li>Item 3</li>
+	</ul>
+</body>
+
+<style>
+	.header{
+		position: absolute;
+		left: 100px;
+		top: 50px;
+		width: 420px;
+		height: 100px;
+		background-color: rgba(129,0,0,0.5);
+			}
+</style>
+<body>
+	<div class="header"></div>
+	<p>HELLO WORLD</p>
+</body>

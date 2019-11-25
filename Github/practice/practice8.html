@@ -1,0 +1,38 @@
+<!-- <!DOCTYPE html> -->
+<html>
+<body>
+	<p id="intro">Hello World!</p>
+	<p id="test">Hello World 1</p>
+	<script type="text/javascript">
+		// txt=document.getElementById("intro").innerHTML;
+		// document.write("<p>Text from paragraph intro:" + txt +"</p>");
+		// txt=document.getElementById("intro").childNodes[0].nodeValue;
+		// document.write("<p>Text from paragraph intro:"+txt+"<p>");
+
+		x=document.getElementsByTagName("p");
+		for(i=0; i<x.length; i++)
+		{
+			document.write(x.length + "<br/>");
+			document.write(x[i].innerHTML);
+			document.write("<br />");
+		}
+		document.body.bgColor="lavender";
+
+		document.getElementById("test").innerHTML="New text";
+
+		function ChangeText() {
+			document.getElementById("test").innerHTML="New text";
+		}
+		function ChangeBackground()
+		{
+			document.body.style.backgroundColor="lavender";
+			document.getElementById("test").style.color="blue";
+			document.getElementById("test").style.fontFamily="Arial";
+		}
+	</script>
+</body>
+<body>
+	<input type="button" onclick="ChangeText()" value="Change text"/>
+	<input type="button" onclick="ChangeBackground()" value="Change color"/>
+</body>
+</html>

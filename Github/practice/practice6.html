@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<body>
+	<script src="script.js"></script>
+	<script>
+		// var user = "Vitaly", year = 2019;
+		// var user = {name:"Vitaly"};
+
+		//var years = prompt('How old are you?',100);
+
+		// alert('You are ' + years + ' old!');
+
+		// var message = (years <3) ? 'Hi':
+		// (years < 18 ) ? 'Hello!':
+		// (years < 100) ? 'Hello sir!':
+		// 'You need to show!';
+		// alert(message);
+		
+		// var isAdmin = confirm("You "+ years + ' old?');
+		// alert(isAdmin);
+		
+		// if (years==2019) {
+		// 	alert(text);
+		// 	alert(text1);
+		// 	alert(text2);
+		// }else if (years != 2018 ) {
+		// 	alert(text);
+		// }else{
+		// 	alert(text);
+		// }
+		// alert ("Hello!");
+		// for(var key in menu){
+		// 	alert("Key: "+key+" value:"+menu[key]);
+		// }
+		// function nameOfFunction(param1, param2) {
+		// 	body function
+		// 	return; 
+		// }
+		// alert("Hello!".length);
+		// alert("Hello!".toUpperCase() );
+		// alert("Hello!".charAt(0) );
+
+		// var str="Widget with id";
+		// alert(str.indexOf("Widget") );
+		// alert(str.indexOf("id") );
+		// alert(str.indexOf("La La La") );
+
+		// var str="stringify";
+		// alert(str.substring(0,1));
+
+		var person={};
+		person.name='Thai';
+		person['name']='Nguyen';
+		person.age = 21;
+		alert(person.name + ' : '+ person.age);
+		delete person.name;    
+
+		var person={};
+		if ("age" in person) {
+			alert("This is not exist!");
+		}
+	</script>
+	<!-- <a href="/delete" onclick="return confirm('Are you sure?';"> Delete </a> -->
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+</body>

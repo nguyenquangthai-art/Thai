@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<body>
+	<p id="Number1">Hello World!</p>
+	<a href="#">Link1</a>
+	<br><img src="dubi.jpg" style ="width: 200px; height: 100px",></img>
+	<img src="photo.jpg" style="width: 100px"></img>
+	<!-- <script type="text/javascript">
+		txt=document.getElementById('Number1').innerHTML;
+		document.write("<p>Text from function document: "+txt+"</p>");
+		var x=document.getElementsByTagName("p").length;
+		var x1=document.getElementsByTagName("p");
+		var y=document.getElementsByTagName("a").length;
+		var i=document.getElementsByTagName("img");
+		var z=x+y;
+		var s1="variable and st"
+		 var url=document.location.href;
+		 var pthname=document.location.pthname;
+		document.write("pathname: "+pthname);
+		document.write("<br>"+url+"<br>"+"protocol: "+location.protocol);
+		document.write("<br>"+s1+"<br>");
+		document.write("character: "+s1.length+" words: "+s1.trim().split(/\W+/).length); 
+		// Напишите количество слов и количество букв в этом предложении
+		alert("Content of first anko: "+ x1[0].innerHTML)
+		alert("Number of anko: "+z) 
+		alert("Number of link: "+y)
+		alert("Number of image: "+i.length)
+		alert("Width of first image: "+i[0].width)
+		alert("Max Width image: "+(i[0].width>i[1].width?i[0].width:i[1].width))  
+		// If i[0]>i[1] true, we will take i[0], if not we will take i[1]
+        alert("Sum Width image: "+ (i[0].width+i[1].width))
+       	</script> -->
+<form id="phone1">
+	<br><input type="text" name="name">
+	<input type="text" name="phone1">
+	<br><input type="button" onclick="Showname()" value="Показать имя формы">
+	<br><input type="button" onclick="Showid1()" value="Принадлежность">
+	<br><input type="button" onclick="Delete()" value="Сбросить">
+	<br><input type="button" onclick="Label()" value="Показать количество полей">
+	<p><label for="name">Name</label>
+	<input type="text" id="name"></p>
+	<p><label for="pass">Пароль </label><input type="password" id="pass"></p>
+	<p><label for="pol" >Пол </label><select name="pol" id="pol">
+		<option value="">Указать</option>
+		<option value="1">Мужской</option>
+	</select></p>
+	<p><label for="pol2">Пол 2 </label>
+		<select id="pol2">
+			<option value="1">Thai</option>
+			<option value="2">Nguyen</option>
+		</select></p>
+	<!-- <textarea name="submit" rows="6"></textarea>
+	<br><input type="submit" name="submit" value="SEND"> -->
+</form>  
+<form id="phone2">
+	<input type="text" name="name">
+	<input type="text" name="phone2">
+</form>  
+<form id="phone3">
+	<input type="text" name="name">
+	<input type="text" name="phone3">
+</form> 
+<form id="phone4">
+	<input type="text" name="name">
+	<input type="text" name="phone4">
+</form> 
+<form id="phone5">
+	<input type="text" name="name">
+	<input type="text" name="phone5">
+</form> 
+<form id="phone6">
+	<input type="text" name="name">
+	<input type="text" name="phone6">
+</form> 
+<form id="phone7">
+	<input type="text" name="name">
+	<input type="text" name="phone7">
+</form> 
+<form id="phone8">
+	<input type="text" name="name">
+	<input type="text" name="phone8">
+</form> 
+<form id="phone9">
+	<input type="text" name="name">
+	<input type="text" name="phone9">
+</form> 
+<form id="phone10">
+	<input type="text" name="name">
+	<input type="text" name="phone10">
+</form>    	
+<script>
+	var f=document.getElementsByTagName("form")
+	alert(f.length)
+	alert(f[0].id)
+	for(i=0; i<f.length-2; i++)
+	{
+		if (i % 2 == 0){
+		document.write(f[i].id +
+			 ", ")	}
+	}
+	document.write(f[8].id + ".")
+	function Showname()
+	{
+		alert('Hello')
+	}
+	function Showid1()
+	{
+		alert(f[0].id)
+	}
+	function Delete()
+	{
+
+	}
+	function Label()
+	{
+		alert('Number of pole: 2')
+	}
+</script>
+</body>

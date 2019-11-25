@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<body>
+	<p>Title123</p>	
+	<a href="#"> Link1<br></a>	<!-- make the link -->
+	<a href="#"> Link2<br></a>
+    <img src="picture.png" alt="img" id="1" style="height: 150px; width: 200px;"></img>  <!--  import photo -->
+    <!-- <img src="photo.jpg" id="2"></img> -->
+    <script type="text/javascript">
+    	var x=document.getElementsByTagName("p").length;
+    	var y=document.getElementsByTagName("a").length;
+    	var z=x+y;
+    	var s1="variable"
+    	var url=document.location.href;
+    	var pthname=document.location.pathname;
+        document.write("pathname:" +pthname+"<br>")
+        document.write(url+"<br>"+"protocol: "+ location.protocol+"<br>");
+        document.write(s1+ "<br>");
+        document.write("character: "+ s1.length + "words: "+ s1.trim().split(/\W+/).length);
+        alert("Content of first anko: "+document.getElementsByTagName("p")[0].innerHTML)
+        alert("Number of anko: "+z)
+        alert("Number of links: "+ document.getElementsByTagName("a").length)
+        alert("Number of images: "+ document.getElementsByTagName("img").length)
+        alert("Width of first image: "+ document.getElementsByTagName("img")[0].width)
+        alert("Max Width image:"+ (document.getElementsByTagName("img")[0].width>document.getElementsByTagName("img")[1].width?document.getElementsByTagName("img")[0].width:document.getElementsByTagName("img")[1].width))
+        alert("Sum Width image: "+ (document.getElementsByTagName("img")[0].width+document.getElementsByTagName("img")[1].width))
+    </script>
+</body>

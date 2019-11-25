@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<body>
+	<script>
+		// var person={};
+		// person.name='Thai';
+		// person['name']='Nguyen';
+		// person.age = 21;
+		// alert(person.name + ' : '+ person.age);
+		// delete person.name;
+
+		// var person = {};
+		// if ("age" in person) {
+		// 	alert("Value not exist!");
+		// }
+		var person = {
+			age:25,
+			name: "Vitaly",
+			// 'sex':"male",
+
+			contact:{
+				email:"male@male.com",
+				phone:"112",
+			}
+			// 'full address':"my home address",
+		};
+		var key = 'age';
+		alert(person[key]);
+		alert(person.contact.email);
+
+		var arr=[];
+		var fruits=["Apple","orange","plum"];
+		alert(fruits[0]);
+		var arr=[1, {name: 'Peter' },'Name',true];
+		alert(arr[1].name);
+
+		// function sayHi() {
+		// 	alert('Hello');
+		// }
+		// alert(sayHi);
+
+		function sayHi() {}
+		sayHi.test=5;
+		alert(sayHi.test);
+		var func=sayHi;
+	</script>
+</body>

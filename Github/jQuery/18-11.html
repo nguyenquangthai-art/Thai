@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js">
+		//open JQuery
+	</script>
+	<style>
+	</style>
+</head>
+<body>
+<!-- 	<p id="el2">Today is Monday</p>
+	<div><p class="el3">Hello World!</p></div>
+	<p>обычная линия</p>
+	<a class="link" href="https://translate.google.com/?hl=vi#view=home&op=translate&sl=ru&tl=vi&text=%D0%B0%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%82%0A%D1%81%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80">123456</a>
+<script>
+	$(document).ready(function(){
+		$("p").css("fontSize","20px");
+		$("#el2").css("color","green");
+		$(".el3").css("color","red");
+		$("#el2,.el3").css("fontWeight","bold");
+		});
+//exercise 1 (front)
+
+$(document).ready(function(){
+	 $("p").append(" Sunny ");         //add after
+	 $("p").prepend("sad ");           //add before 
+	 $(".el3").attr("class","el5");    //change the name class(text)
+	 $("#el2").attr("class","text");   //add class
+	 $(".el3").removeAttr("class");    //remove class
+});
+//exercise 2  (front)
+
+	$("p").html();
+	$("p").html("sdfsf");
+$.ajax({
+	type: "POST",
+	url: "file.php",
+	data: {name: 'Ivan', phone: '1112233'},
+	success: function(msg){
+		alert("OK");
+	}
+});
+$("a").click(function(){
+	alert("URL"+ $(this).attr("href"));
+	alert("hello");
+});
+
+</script> -->
+<p class="1" id="1">Hello World</p>
+<p>Hi World</p>
+<a href="https://www.youtube.com/watch?v=FM7MFYoylVs" class="2">Link</a>
+<br><a href="https://npoed.htmlacademy.ru/htmlcss110/course/1/run/5" target="_blank">Web</a>
+<div>
+	<form>
+	<button type="button" class="class" id="id" onclick="this.form.reset();">ABC</button>
+	<button type="button" class="show" id="show">Show</button>
+	<button type="button" class="close" id="close">Close</button>
+	<input type="text" name="txt10">
+  	</form>
+</div>
+<script>
+	// $(document).ready(function(){
+	// 	$("p").prepend("↗");
+	// 	$('a').attr("target","_blank");
+	// 	// $('href').attr("https","http"); ???
+	// });
+	$(document).ready(function(){
+		$(".class").slideUp(3);	
+		$("#show").fadeIn(3,".1");	
+		$(".close").fadeOut(3);
+		$("div").fadeOut();
+	});
+</script>
+</body>
+</html>
